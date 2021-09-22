@@ -1,7 +1,17 @@
-package com.itheima.aspectj.xml;
+package com.itheima.aspectj.annotation;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
 public class MyAspect {
+    private void myPointCut(){}
     public  void myBefore(JoinPoint joinPoint){
         System.out.print("前置通知：模拟执行权限检查...,");
         System.out.print(" 目标类是: "+joinPoint.getTarget() );

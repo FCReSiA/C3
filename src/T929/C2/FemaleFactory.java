@@ -15,4 +15,6 @@ public class FemaleFactory implements HumanFactory{
     public Human createBlackHuman() {
         return new FemaleBlackHuman();
     }
+
+    public Human createBrownHuman() { return  new FemaleBrownHuman();}
 }

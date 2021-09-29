@@ -1,6 +1,6 @@
 package T929.C2;
 
-public class Test {
+public class NvWa {
     public static void main(String[] args) {
         HumanFactory femaleFactory =new FemaleFactory();
         HumanFactory maleFactory=new MaleFactory();
@@ -19,5 +19,9 @@ public class Test {
        c.getColor();
        c.talk();
        c.getSex();
+      Human d=maleFactory.createBrownHuman();
+       d.getColor();
+       d.getSex();
+       d.talk();
     }
 }

@@ -7,4 +7,6 @@ public interface HumanFactory {
 
     public  Human createBlackHuman();
 
+    public  Human createBrownHuman();
+
 }

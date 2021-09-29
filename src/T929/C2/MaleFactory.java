@@ -17,4 +17,5 @@ public class MaleFactory implements HumanFactory {
     }
 
 
+    public Human createBrownHuman() { return new MaleBrownHuman(); }
 }

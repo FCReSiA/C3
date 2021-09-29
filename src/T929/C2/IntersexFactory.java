@@ -15,4 +15,7 @@ public class IntersexFactory implements HumanFactory{
     public Human createBlackHuman() {
         return new IntersexBlackHuman();
     }
+
+
+    public Human createBrownHuman() { return new IntersexBrownHuman(); }
 }

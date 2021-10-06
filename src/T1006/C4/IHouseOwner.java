@@ -1,9 +1,9 @@
-package T1006.C3;
+package T1006.C4;
 
 import java.util.logging.Logger;
 
 public interface IHouseOwner {
 
-        void tradeHouse();
+        void tradeHouse(Logger log);
     }
 

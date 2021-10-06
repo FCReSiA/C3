@@ -1,4 +1,4 @@
-package T1006.proxy;
+package T1006.C1;
 
 public class GamePlayer implements IGamePlayer
 {

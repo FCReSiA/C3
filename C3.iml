@@ -14,5 +14,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="libs" level="project" />
     <orderEntry type="library" name="com.springsource.org.aspectj.weaver-1.6.8.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-jdbc-4.3.6.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-tx-4.3.6.RELEASE" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.8" level="project" />
   </component>
 </module>

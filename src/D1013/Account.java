@@ -30,8 +30,8 @@ public class Account {
     public String toString() {
         return "Account{" +
                 "id=" + id +
-                ", username=" + username +
+                ", username='" + username + '\'' +
                 ", balance=" + balance +
-                "}";
+                '}';
     }
 }

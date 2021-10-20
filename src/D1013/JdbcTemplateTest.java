@@ -17,8 +17,7 @@ public class JdbcTemplateTest {
         account.setUsername("AW");
         account.setBalance(55.00);
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
-        AccountDao accountDao;
-        accountDao = applicationContext.getBean(AccountDao.class);
+        AccountDao accountDao = applicationContext.getBean(AccountDao.class);
         accountDao.addAccount(account);
     }
 
@@ -99,16 +98,5 @@ public class JdbcTemplateTest {
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
         UserDao userDao = applicationContext.getBean(UserDao.class);
         System.out.println(userDao.findusernamecount());
-    }
-
-    private class ApplicationContext {
-        public AccountDao getBean(Class<AccountDao> accountDaoClass) {
-        }
-    }
-
-    private class ClassPathXmlApplicationContext extends ApplicationContext {
-        public ClassPathXmlApplicationContext(String s) {
-            super();
-        }
     }
 }

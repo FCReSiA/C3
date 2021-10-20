@@ -1,6 +1,6 @@
 package D1013;
-import D1013.Account;
 import java.util.List;
+
 public interface AccountDao {
     public void transfer(String outUser, String inUser , Double money);
     public  int addAccount(Account account);

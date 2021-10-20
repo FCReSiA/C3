@@ -1,8 +1,6 @@
 package D1013;
 
 
-import D1013.AccountDao;
-import D1013.Account;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 

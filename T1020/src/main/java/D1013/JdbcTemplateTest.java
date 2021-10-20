@@ -1,13 +1,5 @@
 package D1013;
 
-import D1013.AccountDao;
-import D1013.UserDao;
-import D1013.Account;
-import D1013.User;
-import org.junit.Test;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import java.util.List;
 
 public class JdbcTemplateTest {

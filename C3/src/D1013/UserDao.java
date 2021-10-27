@@ -1,7 +1,5 @@
 package D1013;
 
-import D1013.User;
-
 import java.util.List;
 
 public interface UserDao {

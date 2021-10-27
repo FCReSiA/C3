@@ -1,7 +1,5 @@
 package D1013;
 
-import D1013.UserDao;
-import D1013.User;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 

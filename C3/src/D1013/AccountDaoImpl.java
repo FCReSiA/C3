@@ -1,8 +1,6 @@
 package D1013;
 
 
-import D1013.AccountDao;
-import D1013.Account;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -45,5 +43,11 @@ public class AccountDaoImpl implements AccountDao {
     public int updateAccount(Account account) {
         String sql="update account set username=?,balance=? where id=?";
         return jdbcTemplate.update(sql,account.getUsername(),account.getBalance(),account.getId());
+    }
+
+    public void transfer(String outUser, String inUser,Double money){
+        this.jdbcTemplate.update("update account set balance = balance +? "+ "where username = ?", money,outUser);
+        int i = 1/10;
+        this.jdbcTemplate.update("update account set balance = balance = balacne -?"+ "where username = ?",money , outUser);
     }
 }
